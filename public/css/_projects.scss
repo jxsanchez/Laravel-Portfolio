@@ -1,0 +1,90 @@
+#projects {
+    height: fit-content;
+    padding-bottom: 9%;
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .projects-row {
+        margin-bottom: 25px;
+    }
+
+    .hovereffects {
+        @include fullSize();
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+            filter: opacity(100);
+        }
+
+        &:hover .project-title,
+        &:hover a.info {
+            opacity: 1;
+            filter: opacity(100);
+            transform: translateY(0);
+        }
+
+        &:hover a.info {
+            transition-delay: 0.2s;
+        }
+
+        .overlay {
+            @include flexCenter(column);
+            @include fullSize();
+            background: $transparentBlack;
+            left: 0;
+            position: absolute;
+            opacity: 0;
+            overflow: hidden;
+            top: 0;
+            transition: all 0.4s ease-in-out;
+        }
+
+        img {
+            display: block;
+            position: relative;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .project-title {
+            color: $white;
+            font-size: 1.5rem;
+            letter-spacing: 5px;
+            position: relative;
+            text-align: center;
+            text-shadow: 0 0 5px $textColor;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+        }
+
+        a.info {
+            background: transparent;
+            border: 1px solid $white;
+            border-radius: 5px;
+            color: $white;
+            display: inline-block;
+            font-size: 1rem;
+            filter: opacity(0);
+            letter-spacing: 7px;
+            opacity: 0;
+            padding: 3px 10px;
+            margin: 0 5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 5px $white;
+            }
+        }
+    }
+}

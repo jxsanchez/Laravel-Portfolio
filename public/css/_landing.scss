@@ -1,0 +1,29 @@
+#landing {
+    @include flexCenter(column);
+
+    .landing-title {
+        color: $primaryGold;
+        font-size: 4rem;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+    }
+
+    .landing-subtitle {
+        font-size: 2.2rem;
+        color: $primaryLightBlue;
+    }
+
+    .socials-container {
+        @include flexCenter(row);
+
+        .social-link {
+            color: $secondaryLightBlue;
+            font-size: 3rem;
+            margin: 0 15px;
+
+            &:hover {
+                color: $secondaryLightBlueHover;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@import "_variables";
+@import "_mixin";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: $primaryLightBlue;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: $textColor;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.section {
+    min-height: 90vh;
+    height: fit-content;
+    position: relative;
+    padding: 50px 75px;
+
+    .section-title {
+        color: $primaryGold;
+        font-size: 3rem;
+    }
+
+    .section-subtitle {
+        color: $primaryLightBlue;
+        font-size: 1.8rem;
+    }
+
+    .section-text {
+        font-size: 1.3rem;
+    }
+
+    .continue-container {
+        animation: float 1s infinite alternate ease-in-out;
+        bottom: 5%;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+
+        .continue-link {
+            @include flexCenter(column);
+            color: $textColor;
+            font-size: 1.7rem;
+        }
+
+        .continue-caret {
+            font-size: 2.2rem;
+        }
+    }
+
+    @keyframes float {
+        from {
+            bottom: 4%;
+        }
+        to {
+            bottom: 6%;
+        }
+    }
+}
+
+.section-divider {
+    border-color: $secondaryLightBlue;
+    border-style: dotted none none;
+    border-width: 20px;
+    height: 0;
+    margin: 50px auto;
+    width: 7%;
+}
+
+@import "_navbar";
+@import "_landing";
+@import "_about";
+@import "_projects";
