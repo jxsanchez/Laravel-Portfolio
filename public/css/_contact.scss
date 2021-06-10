@@ -1,0 +1,49 @@
+#contact {
+    background: url(../img/mosaic-btm-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -30%;
+    padding-bottom: 9%;
+
+    .contact-form {
+        @include flexCenter(column);
+        margin: 0 auto;
+        width: 30%;
+
+        .contact-input,
+        .contact-message {
+            margin-bottom: 15px;
+            border: 1px solid $lightGray;
+            border-radius: 5px;
+            outline: none;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .contact-input {
+            height: 2.3rem;
+        }
+
+        .contact-message {
+            resize: none;
+        }
+
+        .submit-btn {
+            background: $secondaryLightBlue;
+            border: none;
+            border-radius: 50%;
+            color: $white;
+            font-size: 1.3rem;
+            padding: 10px 15px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background: $secondaryLightBlueHover;
+            }
+        }
+    }
+
+    .continue-link {
+        color: $white;
+    }
+}

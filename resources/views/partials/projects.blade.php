@@ -1,6 +1,10 @@
 <div id="projects" class="section">
     <h2 class="section-title">A few of my projects.</h2>
 
+    <p class="section-text">
+        Hover over a project to see more information or visit the site.
+    </p>
+
     {{-- <div class="container"> --}}
         <div class="projects-row row">
             @foreach($projects as $project)
@@ -14,7 +18,7 @@
                             <h2 class="project-title">{{ $project->title }}</h2>
 
                             <div class="overlay-link-container">
-                                <a class="info" href="">
+                                <a class="info" href="/project/{{ $project->id }}">
                                     <i class="fa fa-info-circle"></i>info
                                 </a>
                                 <a class="info" href="{{ $project->url }}">
@@ -30,7 +34,7 @@
     {{-- </div> --}}
     
     <div class="continue-container">
-        <a class="continue-link" href="">
+        <a class="continue-link" href="#contact">
             <span class="continue-text">Any questions?</span>
             <i class="continue-caret fa fa-caret-down"></i>
         </a>

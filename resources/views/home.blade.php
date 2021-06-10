@@ -1,7 +1,6 @@
 @extends('master')
 
-@section('title', 'Home')
-
+@section('title', 'Home | Jesus Sanchez Web Development Portfolio')
 
 @include("nav")
 
@@ -12,4 +11,4 @@
     @include("./partials/contact")
 @endsection
 
-{{-- @include("footer") --}}
+@include("footer")

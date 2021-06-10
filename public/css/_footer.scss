@@ -1,0 +1,47 @@
+#footer {
+    background: $primaryLightBlue;
+    color: $white;
+    padding: 50px 30px;
+    width: 100%;
+
+    .row {
+        margin: 0;
+
+        .footer-column-heading {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer-social-links-container {
+            .social-link {
+                @include whiteLink();
+                font-size: 1.5rem;
+                margin-right: 15px;
+            }
+        }
+
+        .footer-column {
+            padding: 0;
+        }
+
+        .footer-links-container {
+            padding: 10px 0;
+            .footer-link {
+                @include whiteLink();
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.copyright-text {
+    color: $white;
+    margin: 0;
+}
+
+.copyright-container {
+    @include flexCenter(row);
+    background: $secondaryLightBlue;
+    height: fit-content;
+    padding: 10px 0;
+}

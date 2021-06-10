@@ -2,8 +2,8 @@
     height: fit-content;
     padding-bottom: 9%;
 
-    .section-title {
-        margin-bottom: 40px;
+    .section-text {
+        margin-bottom: 30px;
     }
 
     .projects-row {
@@ -59,6 +59,7 @@
             color: $white;
             font-size: 1.5rem;
             letter-spacing: 5px;
+            margin-bottom: 15px;
             position: relative;
             text-align: center;
             text-shadow: 0 0 5px $textColor;

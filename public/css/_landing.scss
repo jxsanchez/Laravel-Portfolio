@@ -1,5 +1,9 @@
 #landing {
     @include flexCenter(column);
+    background: url("../img/mosaic-top-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 190%;
 
     .landing-title {
         color: $primaryGold;
@@ -18,8 +22,8 @@
 
         .social-link {
             color: $secondaryLightBlue;
-            font-size: 3rem;
-            margin: 0 15px;
+            font-size: 2.5rem;
+            margin: 0 25px;
 
             &:hover {
                 color: $secondaryLightBlueHover;

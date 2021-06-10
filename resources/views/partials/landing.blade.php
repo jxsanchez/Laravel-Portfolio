@@ -3,12 +3,20 @@
     <h2 class="landing-subtitle">Full-Stack Web Developer</h2>
 
     <div class="socials-container">
+        <a class="social-link" href="https://twitter.com/jxsdeve" target="blank">
+            <i class="fa fa-twitter"></i>
+        </a>
+
         <a class="social-link" href="https://github.com/jxsanchez" target="blank">
             <i class="fa fa-github-alt"></i>
         </a>
-
+        
         <a class="social-link" href="" target="blank">
             <i class="fa fa-linkedin"></i>
+        </a>
+
+        <a class="social-link" href="https://www.facebook.com/JXS-Development-102585852037345" target="blank">
+            <i class="fa fa-facebook"></i>
         </a>
     </div>
 
