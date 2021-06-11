@@ -13,6 +13,7 @@
 @mixin whiteLink() {
     color: $white;
     font-weight: bold;
+    transition: $transition2;
 
     &:hover {
         color: $secondaryLightBlueHover;

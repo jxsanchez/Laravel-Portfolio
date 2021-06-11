@@ -20,6 +20,7 @@ class CreateProjectsTable extends Migration
             $table->string('previewImgUrl');
             $table->string('url');
             $table->string('githubUrl');
+            $table->string('skills');
             $table->timestamps();
         });
     }

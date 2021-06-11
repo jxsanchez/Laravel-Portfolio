@@ -1,0 +1,79 @@
+.project-container {
+    padding: 50px 70px;
+
+    img {
+        border-radius: 5px;
+    }
+
+    .project-title {
+        color: $primaryGold;
+        font-size: $titleFontSize;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .project-description {
+        font-size: $regFontSize;
+    }
+
+    .project-skills-title {
+        color: $primaryLightBlue;
+        font-size: $subtitleFontSize;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .skill-btn {
+            background: $secondaryLightBlue;
+            border-radius: 5px;
+            color: $white;
+            margin: 0 15px 15px 0;
+            padding: 3px 7px;
+        }
+    }
+
+    i {
+        margin-right: 5px;
+    }
+
+    .project-links-container {
+        margin: 30px 0;
+        width: 100%;
+
+        .project-link {
+            border: 1px solid $primaryLightBlue;
+            border-radius: 5px;
+            color: $primaryLightBlue;
+            font-size: 1.3rem;
+            padding: 7px 14px;
+            margin-right: 15px;
+            letter-spacing: 3px;
+            transition: $transition2;
+            text-transform: uppercase;
+
+            &:hover {
+                border: 1px solid $secondaryLightBlue;
+                color: $secondaryLightBlue;
+            }
+        }
+    }
+
+    .back-btn {
+        background: $lightGray;
+        border-radius: 5px;
+        color: $white;
+        font-size: 1.3rem;
+        padding: 7px 14px;
+        text-transform: uppercase;
+        transition: $transition2;
+
+        &:hover {
+            background: #a9a9a9;
+        }
+    }
+}

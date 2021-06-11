@@ -7,8 +7,8 @@
 
     .contact-form {
         @include flexCenter(column);
-        margin: 0 auto;
-        width: 30%;
+        margin: 30px auto 0;
+        width: 35%;
 
         .contact-input,
         .contact-message {
@@ -35,7 +35,7 @@
             color: $white;
             font-size: 1.3rem;
             padding: 10px 15px;
-            transition: all 0.2s ease-in-out;
+            transition: $transition2;
 
             &:hover {
                 background: $secondaryLightBlueHover;

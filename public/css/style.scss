@@ -8,7 +8,7 @@
 }
 
 html {
-    background: $primaryLightBlue;
+    background: $darkBlue;
 }
 
 body {
@@ -21,24 +21,29 @@ a:hover {
     text-decoration: none;
 }
 
+.row {
+    margin: 0;
+}
+
 .section {
-    min-height: 90vh;
+    background: #fdfffe;
     height: fit-content;
-    position: relative;
+    min-height: 90vh;
     padding: 50px 75px;
+    position: relative;
 
     .section-title {
         color: $primaryGold;
-        font-size: 3rem;
+        font-size: $titleFontSize;
     }
 
     .section-subtitle {
         color: $primaryLightBlue;
-        font-size: 1.8rem;
+        font-size: $subtitleFontSize;
     }
 
     .section-text {
-        font-size: 1.3rem;
+        font-size: $regFontSize;
     }
 
     .continue-container {
@@ -82,6 +87,7 @@ a:hover {
 @import "_navbar";
 @import "_landing";
 @import "_about";
+@import "_project";
 @import "_projects";
 @import "_contact";
 @import "_footer";

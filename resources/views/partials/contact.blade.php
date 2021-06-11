@@ -5,9 +5,9 @@
     </p>
 
     <form class="contact-form" action="">
-        <input class="contact-input" type="text" placeholder="E-mail Address">
-        <input class="contact-input" type="text" placeholder="Subject">
-        <textarea class="contact-message" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+        <input class="contact-input" type="text" placeholder="E-mail Address" required>
+        <input class="contact-input" type="text" placeholder="Subject" required>
+        <textarea class="contact-message" name="" id="" cols="30" rows="5" placeholder="Your message" required></textarea>
         <button class="submit-btn">
             <i class="fa fa-envelope"></i>
         </button>

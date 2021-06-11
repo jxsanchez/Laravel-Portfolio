@@ -2,12 +2,8 @@
     height: fit-content;
     padding-bottom: 9%;
 
-    .section-text {
-        margin-bottom: 30px;
-    }
-
     .projects-row {
-        margin-bottom: 25px;
+        margin-top: 25px;
     }
 
     .hovereffects {
@@ -64,7 +60,7 @@
             text-align: center;
             text-shadow: 0 0 5px $textColor;
             text-transform: uppercase;
-            transition: all 0.2s ease-in-out;
+            transition: $transition2;
         }
 
         a.info {
@@ -81,7 +77,7 @@
             margin: 0 5px;
             text-decoration: none;
             text-transform: uppercase;
-            transition: all 0s ease-in-out;
+            transition: $transition2;
 
             &:hover {
                 box-shadow: 0 0 5px $white;

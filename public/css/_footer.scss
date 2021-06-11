@@ -1,7 +1,7 @@
 #footer {
-    background: $primaryLightBlue;
+    background: $darkBlue;
     color: $white;
-    padding: 50px 30px;
+    padding: 50px 30px 20px;
     width: 100%;
 
     .row {
@@ -24,8 +24,14 @@
             padding: 0;
         }
 
+        .navigation-column {
+            text-align: center;
+        }
+
         .footer-links-container {
             padding: 10px 0;
+            text-align: center;
+
             .footer-link {
                 @include whiteLink();
                 font-size: 1rem;
@@ -41,7 +47,7 @@
 
 .copyright-container {
     @include flexCenter(row);
-    background: $secondaryLightBlue;
+    background: $darkBlue;
     height: fit-content;
-    padding: 10px 0;
+    padding: 20px 0;
 }

@@ -1,9 +1,15 @@
 .navbar {
-    background: $primaryLightBlue;
+    background: $darkBlue;
     justify-content: space-between;
     padding: 15px 20px;
 
     .nav-link {
         color: $white;
+        margin-right: 15px;
+        transition: $transition2;
+
+        &:hover {
+            color: $secondaryLightBlueHover;
+        }
     }
 }

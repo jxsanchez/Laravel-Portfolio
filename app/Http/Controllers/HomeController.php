@@ -14,7 +14,7 @@ class HomeController extends Controller
                 "skills" => array("HTML", "CSS", "SASS", "PHP", "JavaScript", "SQL", "C++")],
             (object)[
                 "category" => "Technologies",
-                "skills" => array("Git/Github", "REST APIs", "MySQL", "MongoDB", "WordPress")
+                "skills" => array("Git/Github", "REST APIs", "AJAX", "MySQL", "MongoDB", "WordPress")
             ],
             (object)[
                 "category" => "Frameworks",
@@ -26,7 +26,7 @@ class HomeController extends Controller
             ],
             (object)[
                 "category" => "Skills",
-                "skills" => array("MacOS Terminal", "Windows Command Line", "Object-Oriented Programming", "Full-Stack Web Development", "Agile", "Scrum")
+                "skills" => array("MacOS Terminal", "Windows Command Line", "Object-Oriented Programming", "Agile", "Scrum")
             ]
         );
 
