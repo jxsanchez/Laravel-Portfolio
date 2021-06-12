@@ -97,6 +97,27 @@ a:hover {
   }
 }
 
+@media (max-width: 320px) {
+  .section {
+    padding: 40px 20px;
+  }
+  .section .section-title {
+    font-size: 1.8rem;
+  }
+  .section .section-subtitle {
+    font-size: 1.5rem;
+  }
+  .section .section-text {
+    font-size: 1rem;
+  }
+  .section .continue-container .continue-link {
+    font-size: 1.5rem;
+  }
+  .section .continue-container .continue-caret {
+    font-size: 2rem;
+  }
+}
+
 .section-divider {
   border-color: #a1d9ff;
   border-style: dotted none none;
@@ -104,6 +125,14 @@ a:hover {
   height: 0;
   margin: 50px auto;
   width: 7%;
+}
+
+@media (max-width: 320px) {
+  .section-divider {
+    border-width: 20px;
+    margin: 40px auto;
+    width: 30%;
+  }
 }
 
 .navbar {
@@ -161,9 +190,6 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 #landing .landing-title {
@@ -171,11 +197,13 @@ a:hover {
   font-size: 4rem;
   letter-spacing: 10px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 #landing .landing-subtitle {
-  font-size: 2.2rem;
   color: #57b4f3;
+  font-size: 2.2rem;
+  text-align: center;
 }
 
 #landing .socials-container {
@@ -204,8 +232,42 @@ a:hover {
   color: #91c3e6;
 }
 
+@media (max-width: 320px) {
+  #landing .landing-title {
+    font-size: 2.5rem;
+    letter-spacing: 7px;
+  }
+  #landing .landing-subtitle {
+    font-size: 1.5rem;
+  }
+  #landing .socials-container .social-link {
+    font-size: 2rem;
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+  #landing .landing-title {
+    font-size: 3.2rem;
+    letter-spacing: 7px;
+  }
+  #landing .landing-subtitle {
+    font-size: 1.9rem;
+  }
+  #landing .socials-container .social-link {
+    font-size: 2.5rem;
+    margin: 0 20px;
+  }
+}
+
 #about {
   padding-bottom: 10%;
+}
+
+@media (max-width: 320px) {
+  #about {
+    padding-bottom: 55%;
+  }
 }
 
 .project-container {
@@ -256,33 +318,55 @@ a:hover {
 }
 
 .project-container .project-links-container {
-  margin: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
   width: 100%;
 }
 
 .project-container .project-links-container .project-link {
+  background: none;
   border: 1px solid #57b4f3;
   border-radius: 5px;
   color: #57b4f3;
-  font-size: 1.3rem;
-  padding: 7px 14px;
-  margin-right: 15px;
+  font-size: 1.1rem;
   letter-spacing: 3px;
+  padding: 7px 14px;
+  text-transform: uppercase;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  text-transform: uppercase;
+  margin-right: 20px;
 }
 
 .project-container .project-links-container .project-link:hover {
+  background: none;
   border: 1px solid #a1d9ff;
   color: #a1d9ff;
 }
 
+.project-container .divider-line {
+  margin: 0 0 20px;
+  border-top: 2px solid #d3d3d3;
+}
+
 .project-container .back-btn {
   background: #d3d3d3;
+  border: 1px solid #f8f8ff;
   border-radius: 5px;
   color: #f8f8ff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  letter-spacing: 3px;
   padding: 7px 14px;
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease-in-out;
@@ -291,6 +375,8 @@ a:hover {
 
 .project-container .back-btn:hover {
   background: #a9a9a9;
+  border: 1px solid #f8f8ff;
+  color: #f8f8ff;
 }
 
 #projects {
@@ -408,6 +494,25 @@ a:hover {
           box-shadow: 0 0 5px #f8f8ff;
 }
 
+@media (max-width: 320px) {
+  #projects {
+    padding-bottom: 40%;
+  }
+  #projects .projects-row {
+    margin-top: 0;
+  }
+  #projects .project-column {
+    margin-bottom: 25px;
+  }
+  #projects .hovereffects .project-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  #projects .hovereffects a.info {
+    font-size: 0.7rem;
+  }
+}
+
 #contact {
   background: url(../img/mosaic-btm-bg.jpg);
   background-size: cover;
@@ -471,6 +576,15 @@ a:hover {
   color: #f8f8ff;
 }
 
+@media (max-width: 320px) {
+  #contact {
+    background-position-y: -100%;
+  }
+  #contact .contact-form {
+    width: 95%;
+  }
+}
+
 #footer {
   background: #106cd1;
   color: #f8f8ff;
@@ -523,6 +637,33 @@ a:hover {
 
 #footer .row .footer-links-container .footer-link:hover {
   color: #91c3e6;
+}
+
+@media (max-width: 320px) {
+  #footer {
+    padding: 30px 20px 10px;
+    width: 100%;
+  }
+  #footer .row .footer-column-heading {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #footer .row .footer-social-links-container {
+    margin-bottom: 15px;
+  }
+  #footer .row .footer-social-links-container .social-link {
+    font-size: 1.5rem;
+    margin: 0 15px;
+  }
+  #footer .row .footer-column {
+    margin-bottom: 10px;
+  }
+  #footer .row .footer-links-container {
+    margin-top: -5px;
+  }
+  #footer .row .footer-links-container .footer-link {
+    font-size: 1rem;
+  }
 }
 
 .copyright-text {

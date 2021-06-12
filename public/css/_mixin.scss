@@ -10,6 +10,31 @@
     width: 100%;
 }
 
+@mixin roundedButton(
+    $bgColor,
+    $bgColorHover,
+    $border,
+    $borderHover,
+    $color,
+    $colorHover,
+    $fontSize
+) {
+    background: $bgColor;
+    border: $border;
+    border-radius: 5px;
+    color: $color;
+    font-size: $fontSize;
+    letter-spacing: 3px;
+    padding: 7px 14px;
+    text-transform: uppercase;
+    transition: $transition2;
+
+    &:hover {
+        background: $bgColorHover;
+        border: $borderHover;
+        color: $colorHover;
+    }
+}
 @mixin whiteLink() {
     color: $white;
     font-weight: bold;

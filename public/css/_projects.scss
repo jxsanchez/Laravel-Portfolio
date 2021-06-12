@@ -84,4 +84,27 @@
             }
         }
     }
+
+    @include media("<=phone") {
+        padding-bottom: 40%;
+
+        .projects-row {
+            margin-top: 0;
+        }
+
+        .project-column {
+            margin-bottom: 25px;
+        }
+
+        .hovereffects {
+            .project-title {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+            }
+
+            a.info {
+                font-size: 0.7rem;
+            }
+        }
+    }
 }

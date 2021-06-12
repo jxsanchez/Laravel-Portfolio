@@ -1,3 +1,7 @@
 #about {
     padding-bottom: 10%;
+
+    @include media("<=phone") {
+        padding-bottom: 55%;
+    }
 }

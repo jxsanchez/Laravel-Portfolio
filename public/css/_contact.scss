@@ -46,4 +46,12 @@
     .continue-link {
         color: $white;
     }
+
+    @include media("<=phone") {
+        background-position-y: -100%;
+
+        .contact-form {
+            width: 95%;
+        }
+    }
 }

@@ -8,7 +8,7 @@
     {{-- <div class="container"> --}}
         <div class="projects-row row">
             @foreach($projects as $project)
-                <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="project-column col-md-4 col-sm-6 col-xs-12">
                     <div class="hovereffects">
                         <img src="{{ $project->previewImgUrl }}"
                              width="100%"

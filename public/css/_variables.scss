@@ -1,3 +1,5 @@
+@import "./breakpoints/breakpoints.scss";
+
 $darkBlue: #106cd1;
 $primaryLightBlue: #57b4f3;
 $secondaryLightBlue: #a1d9ff;
@@ -6,6 +8,7 @@ $primaryGold: #fac748;
 
 $white: #f8f8ff;
 $lightGray: #d3d3d3;
+$darkGray: #a9a9a9;
 $textColor: #344966;
 
 $transparentBlack: rgba(0, 0, 0, 0.5);

@@ -15,6 +15,18 @@
                  alt="{{ $project->title }} Preview"
                  width="100%" 
             />
+
+            <div class="project-links-container">
+                <a class="project-link" href="{{ $project->url }}">
+                    <i class="fa fa-external-link"></i>Visit
+                </a>
+        
+                @if($project->githubUrl != 'none')
+                    <a class="project-link" href="{{ $project->githubUrl }}">
+                        <i class="fa fa-github-alt"></i>View Repository
+                    </a>
+                @endif 
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-12">
@@ -31,17 +43,7 @@
                 @endforeach
             </div>
 
-            <div class="project-links-container">
-                <a class="project-link" href="{{ $project->url }}">
-                    <i class="fa fa-external-link"></i>Visit Website
-                </a>
-        
-                @if($project->githubUrl != 'none')
-                    <a class="project-link" href="{{ $project->githubUrl }}">
-                        <i class="fa fa-github-alt"></i>View Source Code
-                    </a>
-                @endif 
-            </div>
+            <hr class="divider-line">
 
             <a class="back-btn" href="/#projects">
                 <i class="fa fa-caret-left"></i>Back
