@@ -1,7 +1,15 @@
 #about {
     padding-bottom: 10%;
 
+    .category-column {
+        padding: 0;
+    }
+
     @include media("<=phone") {
         padding-bottom: 55%;
+    }
+
+    @include media(">phone", "<=425px") {
+        padding-bottom: 50%;
     }
 }

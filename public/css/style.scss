@@ -101,6 +101,29 @@ a:hover {
     }
 
     @include media(">phone", "<=425px") {
+        padding: 40px 25px;
+
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.7rem;
+        }
+
+        .section-text {
+            font-size: 1.2rem;
+        }
+
+        .continue-container {
+            .continue-link {
+                font-size: 1.7rem;
+            }
+
+            .continue-caret {
+                font-size: 2.2rem;
+            }
+        }
     }
 }
 
@@ -115,6 +138,12 @@ a:hover {
     @include media("<=phone") {
         border-width: 20px;
         margin: 40px auto;
+        width: 30%;
+    }
+
+    @include media(">phone", "<=425px") {
+        border-width: 20px;
+        margin: 25px auto;
         width: 30%;
     }
 }

@@ -28,6 +28,14 @@
             resize: none;
         }
 
+        .success-msg {
+            background: $lightGreen;
+            border-radius: 5px;
+            color: $white;
+            padding: 7px 7px;
+            text-align: center;
+        }
+
         .submit-btn {
             background: $secondaryLightBlue;
             border: none;
@@ -49,9 +57,25 @@
 
     @include media("<=phone") {
         background-position-y: -100%;
+        padding-bottom: 40%;
 
         .contact-form {
             width: 95%;
+
+            .success-msg {
+            }
+        }
+    }
+
+    @include media(">phone", "<=425px") {
+        background-position-y: -100%;
+        padding-bottom: 37%;
+
+        .contact-form {
+            width: 95%;
+        }
+
+        .success-msg {
         }
     }
 }

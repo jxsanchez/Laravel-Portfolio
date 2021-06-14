@@ -2,6 +2,13 @@
     height: fit-content;
     padding-bottom: 9%;
 
+    .projects-directions-desktop {
+        display: block;
+    }
+
+    .projects-directions-mobile {
+        display: none;
+    }
     .projects-row {
         margin-top: 25px;
     }
@@ -92,6 +99,14 @@
             margin-top: 0;
         }
 
+        .projects-directions-desktop {
+            display: none;
+        }
+
+        .projects-directions-mobile {
+            display: block;
+        }
+
         .project-column {
             margin-bottom: 25px;
         }
@@ -104,6 +119,37 @@
 
             a.info {
                 font-size: 0.7rem;
+            }
+        }
+    }
+
+    @include media(">phone", "<=425px") {
+        padding-bottom: 40%;
+
+        .projects-row {
+            margin-top: 0;
+        }
+
+        .projects-directions-desktop {
+            display: none;
+        }
+
+        .projects-directions-mobile {
+            display: block;
+        }
+
+        .project-column {
+            margin-bottom: 25px;
+        }
+
+        .hovereffects {
+            .project-title {
+                font-size: 1.7rem;
+                margin-bottom: 10px;
+            }
+
+            a.info {
+                font-size: 1.1rem;
             }
         }
     }

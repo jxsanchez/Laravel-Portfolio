@@ -1,8 +1,12 @@
 <div id="projects" class="section">
     <h2 class="section-title">A few of my projects.</h2>
 
-    <p class="section-text">
+    <p class="section-text projects-directions-desktop">
         Hover over a project to see more information or visit the site.
+    </p>
+
+    <p class="section-text projects-directions-mobile">
+        Tap on a project to see more information or visit the site.
     </p>
 
     {{-- <div class="container"> --}}

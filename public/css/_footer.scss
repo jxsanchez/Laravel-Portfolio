@@ -71,6 +71,40 @@
             }
         }
     }
+
+    @include media(">phone", "<=425px") {
+        padding: 35px 0 15px;
+        width: 100%;
+
+        .row {
+            .footer-column-heading {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .footer-social-links-container {
+                @include flexCenter(row);
+                margin-bottom: 15px;
+
+                .social-link {
+                    font-size: 1.7rem;
+                    margin: 0 20px;
+                }
+            }
+
+            .footer-column {
+                margin-bottom: 10px;
+            }
+
+            .footer-links-container {
+                margin-top: -5px;
+
+                .footer-link {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
 }
 
 .copyright-text {

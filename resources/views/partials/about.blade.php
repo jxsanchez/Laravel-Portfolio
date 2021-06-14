@@ -7,7 +7,7 @@
     <!-- Show Skill columns using Bootstrap -->
     <div class="row">
         @foreach($skillsArr as $category)
-            <div class="col-md">
+            <div class="category-column col-md">
                 <h4 class="section-subtitle">{{ $category->category }}</h4>
                 @foreach($category->skills as $skill)
                     <p class="section-text">{{ $skill }}</p>
