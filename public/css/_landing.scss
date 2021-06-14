@@ -32,6 +32,7 @@
 
     .socials-container {
         @include flexCenter(row);
+        transform: translateY(50px);
 
         .social-link {
             color: $secondaryLightBlue;

@@ -257,6 +257,8 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
 }
 
 #landing .socials-container .social-link {
@@ -803,7 +805,7 @@ a:hover {
   background: #87bba2;
   border-radius: 5px;
   color: #f8f8ff;
-  padding: 7px 7px;
+  padding: 7px 13px;
   text-align: center;
 }
 
