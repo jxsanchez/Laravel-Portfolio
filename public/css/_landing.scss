@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 130%;
+    height: 90vh;
     padding: 0;
     margin: 0;
 
@@ -79,5 +80,15 @@
                 margin: 0 20px;
             }
         }
+    }
+
+    @include media(">phone", "<=425px", "landscape") {
+        .landing-title {
+            font-size: 1rem;
+            letter-spacing: 5px;
+        }
+    }
+
+    @include media(">=tablet", "<desktop") {
     }
 }

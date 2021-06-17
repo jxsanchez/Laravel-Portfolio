@@ -25,7 +25,9 @@ a:hover {
 
 .section {
   background: #fdfffe;
-  min-height: 90vh;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   padding: 50px 75px;
   position: relative;
 }
@@ -216,6 +218,7 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 130%;
+  height: 90vh;
   padding: 0;
   margin: 0;
 }
@@ -305,6 +308,13 @@ a:hover {
   }
 }
 
+@media (min-width: 321px) and (max-width: 425px) and (orientation: landscape) {
+  #landing .landing-title {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+}
+
 #about {
   padding-bottom: 10%;
 }
@@ -322,6 +332,12 @@ a:hover {
 @media (min-width: 321px) and (max-width: 425px) {
   #about {
     padding-bottom: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #about {
+    padding-bottom: 20%;
   }
 }
 
@@ -763,6 +779,21 @@ a:hover {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  #projects {
+    padding-bottom: 15%;
+  }
+  #projects .project-column {
+    margin-bottom: 25px;
+  }
+  #projects .projects-directions-desktop {
+    display: none;
+  }
+  #projects .projects-directions-mobile {
+    display: block;
+  }
+}
+
 #contact {
   background: url(../img/mosaic-btm-bg.jpg);
   background-size: cover;
@@ -851,6 +882,19 @@ a:hover {
   }
   #contact .contact-form {
     width: 95%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #contact {
+    background-position-y: -100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 20%;
+  }
+  #contact .contact-form {
+    width: 60%;
   }
 }
 

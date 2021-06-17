@@ -9,6 +9,7 @@
     .projects-directions-mobile {
         display: none;
     }
+
     .projects-row {
         margin-top: 25px;
     }
@@ -151,6 +152,21 @@
             a.info {
                 font-size: 1.1rem;
             }
+        }
+    }
+
+    @include media(">=tablet", "<desktop") {
+        padding-bottom: 15%;
+        .project-column {
+            margin-bottom: 25px;
+        }
+
+        .projects-directions-desktop {
+            display: none;
+        }
+
+        .projects-directions-mobile {
+            display: block;
         }
     }
 }

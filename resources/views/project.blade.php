@@ -10,7 +10,7 @@
     @endphp
 
     <div class="project-container row">
-        <div class="col-md-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12">
             <img src="../{{ $project->previewImgUrl }}" 
                  alt="{{ $project->title }} Preview"
                  width="100%" 
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12">
             <h1 class="project-title">{{ $project->title }}</h1>
             <p>{{ $project->description }}</p>
     

@@ -12,4 +12,8 @@
     @include media(">phone", "<=425px") {
         padding-bottom: 50%;
     }
+
+    @include media(">=tablet", "<desktop") {
+        padding-bottom: 20%;
+    }
 }
