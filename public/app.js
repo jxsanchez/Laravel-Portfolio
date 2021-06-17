@@ -32,7 +32,14 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
                     }
                         break;
                     case 'projects' : {
-                        
+                        setTimeout(function() {
+                            const projectsAnimation = anime({
+                                targets: '.project-column',
+                                opacity: [0, 1],
+                                translateY: [50, 0],
+                                delay: (el, i) => { return i * 750; }
+                            });
+                        }, 1000);
                     }
                         break;
                     case 'contact': {
@@ -50,7 +57,7 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 { // options
     root: null,
     threshold: 0.30, // [0, 1] how much of item must be on page to fire
-    rootMargin: "100px"
+    rootMargin: "150px"
 });
 
 sections.forEach(section => {
@@ -63,18 +70,3 @@ const socialLinksAnimation = anime({
     translateY: [50, 0],
     delay: (el, i) => { return i * 100; }
 });
-
-// Wrap every letter in a span
-// const textWrappers = document.querySelectorAll('.letters');
-// textWrappers.forEach((textWrapper) => {
-//     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class="letter">$&</span>');
-// });
-
-// const sectionTitleAnimation = anime({
-//     targets: '.letter',
-//     opacity: [0, 1],
-//     translateY: ['1.1rem', 0],
-//     translateZ: 0,
-//     duration: 750,
-//     delay: (el, i) => { return i * 50; }
-// });
