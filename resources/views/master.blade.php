@@ -25,7 +25,7 @@
     
     <link rel="stylesheet" href="/css/style.css">
     
-    <link rel="shortcut icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/jxs_logo.png">
     <title>@yield("title")</title>
 
     <!-- AnimeJS CDN -->

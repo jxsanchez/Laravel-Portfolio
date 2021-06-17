@@ -1,7 +1,7 @@
 <div id="contact" class="section">
     <h2 class="section-title">
         <span class="title-wrapper">
-            <span class="letters">Don't hesitate to reach out!</span>
+            <span class="letters">Contact Me</span>
         </span>
     </h2>
     <p class="section-text">

@@ -30,4 +30,4 @@
     </div>
 </div>
 
-<hr class="section-divider">
+{{-- <hr class="section-divider"> --}}

@@ -2,7 +2,7 @@
     <h2 class="section-title">
         <span class="title-wrapper">
             <span class="letters">
-                A programmer with {{ Carbon\Carbon::now()->year - 2016}} years of coding experience.
+                About Me
             </span>
         </span>
     </h2>
@@ -31,4 +31,4 @@
     </div>
 </div>
 
-<hr class="section-divider">
+{{-- <hr class="section-divider"> --}}

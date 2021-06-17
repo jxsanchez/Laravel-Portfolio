@@ -44,7 +44,7 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 }, 
 { // options
     root: null,
-    threshold: 0.15, // [0, 1] how much of item must be on page to fire
+    threshold: 0.10, // [0, 1] how much of item must be on page to fire
     rootMargin: "100px"
 });
 

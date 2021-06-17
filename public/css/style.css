@@ -33,6 +33,8 @@ a:hover {
 .section .section-title {
   color: #fac748;
   font-size: 3rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .section .section-title .title-wrapper {

@@ -35,6 +35,8 @@ a:hover {
     .section-title {
         color: $primaryGold;
         font-size: $titleFontSize;
+        letter-spacing: 5px;
+        text-transform: uppercase;
 
         .title-wrapper {
             display: inline-block;
