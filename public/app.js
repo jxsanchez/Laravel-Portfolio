@@ -23,11 +23,16 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 
                 switch(entry.target.id) {
                     case 'about': {
-                        
+                        const skillsListAnimation = anime({
+                            targets: '.skill-bullet',
+                            opacity: [0, 1],
+                            translateY: [-50, 0],
+                            delay: (el, i) => { return i * 100; }
+                        });
                     }
                         break;
                     case 'projects' : {
-
+                        
                     }
                         break;
                     case 'contact': {
@@ -44,7 +49,7 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 }, 
 { // options
     root: null,
-    threshold: 0.10, // [0, 1] how much of item must be on page to fire
+    threshold: 0.30, // [0, 1] how much of item must be on page to fire
     rootMargin: "100px"
 });
 
@@ -57,8 +62,6 @@ const socialLinksAnimation = anime({
     opacity: [0, 1],
     translateY: [50, 0],
     delay: (el, i) => { return i * 100; }
-    // translateY: 0,
-    // delay: (el, i) => { return i * 100; }
 });
 
 // Wrap every letter in a span

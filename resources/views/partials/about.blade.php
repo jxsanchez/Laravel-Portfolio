@@ -17,7 +17,7 @@
             <div class="category-column col-md">
                 <h4 class="section-subtitle">{{ $category->category }}</h4>
                 @foreach($category->skills as $skill)
-                    <p class="section-text">{{ $skill }}</p>
+                    <p class="skill-bullet section-text">{{ $skill }}</p>
                 @endforeach
             </div>
         @endforeach

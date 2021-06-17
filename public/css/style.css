@@ -870,7 +870,7 @@ a:hover {
   font-weight: bold;
 }
 
-#footer .row .footer-social-links-container .social-link {
+#footer .row .footer-social-links-container .footer-social-link {
   color: #f8f8ff;
   font-weight: bold;
   -webkit-transition: all 0.2s ease-in-out;
@@ -879,7 +879,7 @@ a:hover {
   margin-right: 15px;
 }
 
-#footer .row .footer-social-links-container .social-link:hover {
+#footer .row .footer-social-links-container .footer-social-link:hover {
   color: #91c3e6;
 }
 
@@ -920,7 +920,7 @@ a:hover {
   #footer .row .footer-social-links-container {
     margin-bottom: 15px;
   }
-  #footer .row .footer-social-links-container .social-link {
+  #footer .row .footer-social-links-container .footer-social-link {
     font-size: 1.5rem;
     margin: 0 15px;
   }
@@ -959,10 +959,8 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 15px;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
   }
-  #footer .row .footer-social-links-container .social-link {
+  #footer .row .footer-social-links-container .footer-social-link {
     font-size: 1.7rem;
     margin: 0 20px;
   }

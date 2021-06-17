@@ -17,19 +17,19 @@
                 <h6 class="footer-column-heading">Social</h6>
 
                 <div class="footer-social-links-container">
-                    <a class="social-link" href="https://twitter.com/jxsdeve" target="blank">
+                    <a class="footer-social-link" href="https://twitter.com/jxsdeve" target="blank">
                         <i class="fa fa-twitter"></i>
                     </a>
             
-                    <a class="social-link" href="https://github.com/jxsanchez" target="blank">
+                    <a class="footer-social-link" href="https://github.com/jxsanchez" target="blank">
                         <i class="fa fa-github-alt"></i>
                     </a>
                     
-                    <a class="social-link" href="https://www.linkedin.com/in/jesus-sanchez-9b3874213/" target="blank">
+                    <a class="footer-social-link" href="https://www.linkedin.com/in/jesus-sanchez-9b3874213/" target="blank">
                         <i class="fa fa-linkedin"></i>
                     </a>
                     
-                    <a class="social-link" href="https://www.facebook.com/JXS-Development-102585852037345" target="blank">
+                    <a class="footer-social-link" href="https://www.facebook.com/JXS-Development-102585852037345" target="blank">
                         <i class="fa fa-facebook"></i>
                     </a>
                 </div>
