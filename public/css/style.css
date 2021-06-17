@@ -25,9 +25,6 @@ a:hover {
 
 .section {
   background: #fdfffe;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   min-height: 90vh;
   padding: 50px 75px;
   position: relative;
@@ -36,6 +33,15 @@ a:hover {
 .section .section-title {
   color: #fac748;
   font-size: 3rem;
+}
+
+.section .section-title .title-wrapper {
+  display: inline-block;
+}
+
+.section .section-title .title-wrapper .letter {
+  display: inline-block;
+  line-height: 1rem;
 }
 
 .section .section-subtitle {
@@ -257,8 +263,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
 }
 
 #landing .socials-container .social-link {
@@ -780,7 +784,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px auto 0;
-  width: 35%;
+  width: 40%;
 }
 
 #contact .contact-form .contact-input,
@@ -953,6 +957,8 @@ a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 15px;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   #footer .row .footer-social-links-container .social-link {
     font-size: 1.7rem;

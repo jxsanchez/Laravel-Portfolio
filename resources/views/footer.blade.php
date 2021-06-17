@@ -38,7 +38,7 @@
                 <h6 class="footer-column-heading">Navigation</h6>
                 <div class="footer-links-container row">
                     <div class="footer-column col-md-3 col-sm-6">
-                        <a class="footer-link" href="{{ $linkAppend }}#landing">Landing</a>
+                        <a class="footer-link" href="/">Landing</a>
                     </div>
                     <div class="footer-column col-md-3 col-sm-6">
                         <a class="footer-link" href="{{ $linkAppend }}#about">About</a>

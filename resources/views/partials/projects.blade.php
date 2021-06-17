@@ -1,5 +1,9 @@
 <div id="projects" class="section">
-    <h2 class="section-title">A few of my projects.</h2>
+    <h2 class="section-title">
+        <span class="title-wrapper">
+            <span class="letters">A few of my projects.</span>
+        </span>
+    </h2>
 
     <p class="section-text projects-directions-desktop">
         Hover over a project to see more information or visit the site.

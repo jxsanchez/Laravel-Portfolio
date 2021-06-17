@@ -1,5 +1,12 @@
 <div id="about" class="section">
-    <h2 class="section-title">A programmer with {{ Carbon\Carbon::now()->year - 2016}} years of coding experience.</h2>
+    <h2 class="section-title">
+        <span class="title-wrapper">
+            <span class="letters">
+                A programmer with {{ Carbon\Carbon::now()->year - 2016}} years of coding experience.
+            </span>
+        </span>
+    </h2>
+    
     <p class="section-text">
         I discovered my passion for web development during a univeristy project class in 2019 and I have been improving my skills ever since. I have experience with:
     </p>

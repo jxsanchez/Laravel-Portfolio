@@ -27,7 +27,7 @@ a:hover {
 
 .section {
     background: #fdfffe;
-    height: fit-content;
+    // height: fit-content;
     min-height: 90vh;
     padding: 50px 75px;
     position: relative;
@@ -35,6 +35,15 @@ a:hover {
     .section-title {
         color: $primaryGold;
         font-size: $titleFontSize;
+
+        .title-wrapper {
+            display: inline-block;
+
+            .letter {
+                display: inline-block;
+                line-height: 1rem;
+            }
+        }
     }
 
     .section-subtitle {

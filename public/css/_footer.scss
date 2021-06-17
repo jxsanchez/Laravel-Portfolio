@@ -85,6 +85,7 @@
             .footer-social-links-container {
                 @include flexCenter(row);
                 margin-bottom: 15px;
+                transform: translateY(50px);
 
                 .social-link {
                     font-size: 1.7rem;
