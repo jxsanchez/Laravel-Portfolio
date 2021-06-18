@@ -22,7 +22,7 @@ class HomeController extends Controller
             ],
             (object) [
                 "category" => "Libraries",
-                "skills" => array("jQuery", "Bootstrap", "Express.js", "Mongoose")
+                "skills" => array("jQuery", "Bootstrap", "Anime.js", "Express.js", "Mongoose")
             ],
             (object)[
                 "category" => "Skills",
