@@ -33,11 +33,17 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
                         break;
                     case 'projects' : {
                         setTimeout(function() {
+                            const projectColumns = document.querySelectorAll('.project-column');
+                            
+                            projectColumns.forEach(column => {
+                                column.classList.toggle('hide');
+                            });
+
                             const projectsAnimation = anime({
                                 targets: '.project-column',
                                 opacity: [0, 1],
-                                translateY: [50, 0],
-                                delay: (el, i) => { return i * 750; }
+                                translateY: [75, 0],
+                                delay: (el, i) => { return i * 300; }
                             });
                         }, 1000);
                     }

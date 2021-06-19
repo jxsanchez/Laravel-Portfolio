@@ -158,6 +158,10 @@ a:hover {
     }
 }
 
+.hide {
+    display: none;
+}
+
 @import "_navbar";
 @import "_landing";
 @import "_about";
