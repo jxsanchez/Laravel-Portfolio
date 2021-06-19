@@ -39,6 +39,6 @@
 
     @yield("footer")
 
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>

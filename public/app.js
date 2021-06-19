@@ -6,12 +6,28 @@ textWrappers.forEach(text => {
     text.innerHTML = text.textContent.replace(/\S/g, '<span class="letter">$&</span>');
 });
 
-// Animate social links in landing section
-const socialLinksAnimation = anime({
-    targets: '.social-link',
+// Animations that use the fade up animation
+fadeUpAnimation('.social-link', 50, 100);
+fadeUpAnimation('.skill-btn', 50, 100);
+fadeUpAnimation('.project-container', 50, 0);
+
+const projectTitleAnimation = anime({
+    targets: '.project-title',
     opacity: [0, 1],
-    translateY: [50, 0],
-    delay: (el, i) => { return i * 100; }
+    translateX: [300, 0],
+    duration: 500,
+    easing: 'easeInOutSine'
+});
+const f = anime({
+    targets: '.project-back-btn',
+    opacity: [0, 1],
+    translateX: [300, 0],
+    duration: 500,
+    easing: 'easeInOutSine'
+});
+
+$('.back-btn').click(() => {
+    
 });
 
 // Store all sections
@@ -85,3 +101,12 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 sections.forEach(section => {
     sectionsObserver.observe(section);
 });
+
+function fadeUpAnimation(targets, translateY1, delayMultiplier) {
+    return anime({
+        targets: targets,
+        opacity: [0, 1],
+        translateY: [translateY1, 0],
+        delay: (el, i) => { return i * delayMultiplier }
+    });
+}

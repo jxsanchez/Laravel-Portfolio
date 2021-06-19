@@ -12,7 +12,8 @@
 
     <div class="project-container row">
         <div class="col-lg-6 col-sm-12">
-            <img src="../{{ $project->previewImgUrl }}" 
+            <img class="project-preview-img"
+                 src="../{{ $project->previewImgUrl }}" 
                  alt="{{ $project->title }} Preview"
                  width="100%" 
             />
@@ -46,8 +47,10 @@
 
             <hr class="divider-line">
 
-            <a class="back-btn" href="/#projects">
-                <i class="fa fa-caret-left"></i>Back
+            <a class="back-btn project-back-btn" href="/#projects">
+                <span class="back-btn-content">
+                    <i class="back-arrow fa fa-caret-left"></i>Back
+                </span>
             </a>   
         </div>
     </div>

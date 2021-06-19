@@ -556,7 +556,7 @@ a:hover {
     font-size: 1.2rem;
   }
   .project-container .project-skills-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .project-container .skills-container .skill-btn {
     font-size: 1rem;
@@ -795,11 +795,11 @@ a:hover {
     margin-bottom: 25px;
   }
   #projects .hovereffects .project-title {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
   }
   #projects .hovereffects a.info {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }
 
