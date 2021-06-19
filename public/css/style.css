@@ -219,9 +219,10 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: url("../img/mosaic-top-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: 130%;
+  background-position-y: 210%;
   height: 90vh;
   padding: 0;
   margin: 0;
@@ -285,6 +286,9 @@ a:hover {
 }
 
 @media (max-width: 320px) {
+  #landing {
+    background-position: 0px -390px;
+  }
   #landing .landing-title {
     font-size: 2.5rem;
     letter-spacing: 7px;
@@ -299,6 +303,9 @@ a:hover {
 }
 
 @media (min-width: 321px) and (max-width: 425px) {
+  #landing {
+    background-position: 0px -450px;
+  }
   #landing .landing-title {
     font-size: 3.2rem;
     letter-spacing: 7px;
@@ -316,6 +323,12 @@ a:hover {
   #landing .landing-title {
     font-size: 1rem;
     letter-spacing: 5px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  #landing {
+    background-position: 0px -515px;
   }
 }
 

@@ -1,9 +1,9 @@
 #landing {
     @include flexCenter(column);
-    // background: url("../img/mosaic-top-bg.jpg");
+    background: url("../img/mosaic-top-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 130%;
+    background-position-y: 210%;
     height: 90vh;
     padding: 0;
     margin: 0;
@@ -47,6 +47,8 @@
     }
 
     @include media("<=phone") {
+        background-position: 0px -390px;
+
         .landing-title {
             font-size: 2.5rem;
             letter-spacing: 7px;
@@ -65,6 +67,8 @@
     }
 
     @include media(">phone", "<=425px") {
+        background-position: 0px -450px;
+
         .landing-title {
             font-size: 3.2rem;
             letter-spacing: 7px;
@@ -90,5 +94,6 @@
     }
 
     @include media(">=tablet", "<desktop") {
+        background-position: 0px -515px;
     }
 }
