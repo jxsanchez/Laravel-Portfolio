@@ -6,6 +6,15 @@ textWrappers.forEach(text => {
     text.innerHTML = text.textContent.replace(/\S/g, '<span class="letter">$&</span>');
 });
 
+// Animate social links in landing section
+const socialLinksAnimation = anime({
+    targets: '.social-link',
+    opacity: [0, 1],
+    translateY: [50, 0],
+    delay: (el, i) => { return i * 100; }
+});
+
+// Store all sections
 const sections = document.querySelectorAll(".section");
 
 const sectionsObserver = new IntersectionObserver((entries, observer) => {
@@ -55,6 +64,12 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 
                 sectionsObserver.unobserve(entry.target);
             }
+
+            const continueContainerAnimation = anime({
+                targets: '.continue-container',
+                opacity: [0, 1],
+                translateY: [-100, 0]
+            });
         } else {
             return;
         }
@@ -62,17 +77,11 @@ const sectionsObserver = new IntersectionObserver((entries, observer) => {
 }, 
 { // options
     root: null,
-    threshold: 0.30, // [0, 1] how much of item must be on page to fire
-    rootMargin: "150px"
+    threshold: 0.50, // [0, 1] how much of item must be on page to fire
+    rootMargin: "200px"
 });
 
+// Add observer to each section
 sections.forEach(section => {
     sectionsObserver.observe(section);
-});
-
-const socialLinksAnimation = anime({
-    targets: '.social-link',
-    opacity: [0, 1],
-    translateY: [50, 0],
-    delay: (el, i) => { return i * 100; }
 });

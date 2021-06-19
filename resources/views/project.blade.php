@@ -6,6 +6,7 @@
 
 @section('content')
     @php
+        // Store skills as array
         $skillsUsed = explode("|", $project->skills);
     @endphp
 
