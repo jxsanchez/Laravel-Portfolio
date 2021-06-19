@@ -1,6 +1,6 @@
 #projects {
     height: fit-content;
-    padding-bottom: 9%;
+    padding-bottom: 13%;
 
     .projects-directions-desktop {
         display: block;
@@ -13,6 +13,10 @@
     .projects-row {
         margin-top: 25px;
         min-height: 35vh;
+    }
+
+    .project-column {
+        margin-top: 25px;
     }
 
     .hovereffects {

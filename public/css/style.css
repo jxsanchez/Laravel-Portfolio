@@ -627,7 +627,7 @@ a:hover {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-bottom: 9%;
+  padding-bottom: 13%;
 }
 
 #projects .projects-directions-desktop {
@@ -641,6 +641,10 @@ a:hover {
 #projects .projects-row {
   margin-top: 25px;
   min-height: 35vh;
+}
+
+#projects .project-column {
+  margin-top: 25px;
 }
 
 #projects .hovereffects {
