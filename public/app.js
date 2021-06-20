@@ -11,6 +11,7 @@ fadeUpAnimation('.social-link', 50, 25);
 fadeUpAnimation('.skill-btn', 50, 100);
 fadeUpAnimation('.project-container', 50, 0);
 
+// Title come in from right
 const projectTitleAnimation = anime({
     targets: '.project-title',
     opacity: [0, 1],
@@ -19,9 +20,9 @@ const projectTitleAnimation = anime({
     easing: 'easeInOutSine'
 });
 
+// Back button move all the way left when clicked
 $('.back-btn').click(() => {
-    // figure out this laterrrr
-    const f = anime({
+    const backBtnAnimation = anime({
         targets: '.back-btn',
         opacity: [1, 0],
         translateX: [0, "-1000%"],
