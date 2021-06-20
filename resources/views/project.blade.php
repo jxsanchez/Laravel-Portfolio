@@ -47,8 +47,8 @@
 
             <hr class="divider-line">
 
-            <a class="back-btn project-back-btn" href="/#projects">
-                <span class="back-btn-content">
+            <a class="back-btn" href="/#projects">
+                <span class="btn-content">
                     <i class="back-arrow fa fa-caret-left"></i>Back
                 </span>
             </a>   

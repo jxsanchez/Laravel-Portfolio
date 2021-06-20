@@ -75,6 +75,9 @@
             $white,
             1.1rem
         );
+
+        display: block;
+        width: fit-content;
     }
 
     @include media("<=phone") {

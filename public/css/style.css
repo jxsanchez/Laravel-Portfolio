@@ -459,6 +459,10 @@ a:hover {
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .project-container .back-btn:hover {

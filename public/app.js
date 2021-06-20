@@ -7,7 +7,7 @@ textWrappers.forEach(text => {
 });
 
 // Animations that use the fade up animation
-fadeUpAnimation('.social-link', 50, 100);
+fadeUpAnimation('.social-link', 50, 25);
 fadeUpAnimation('.skill-btn', 50, 100);
 fadeUpAnimation('.project-container', 50, 0);
 
@@ -18,16 +18,16 @@ const projectTitleAnimation = anime({
     duration: 500,
     easing: 'easeInOutSine'
 });
-const f = anime({
-    targets: '.project-back-btn',
-    opacity: [0, 1],
-    translateX: [300, 0],
-    duration: 500,
-    easing: 'easeInOutSine'
-});
 
 $('.back-btn').click(() => {
-    
+    // figure out this laterrrr
+    const f = anime({
+        targets: '.back-btn',
+        opacity: [1, 0],
+        translateX: [0, "-1000%"],
+        duration: 250,
+        easing: 'easeInOutSine'
+    });  
 });
 
 // Store all sections
