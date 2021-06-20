@@ -20,13 +20,21 @@ const projectTitleAnimation = anime({
     easing: 'easeInOutSine'
 });
 
-// Back button move all the way left when clicked
-$('.back-btn').click(() => {
+// Shift back button text left when hover
+$('.back-btn').mouseenter(() => {
     const backBtnAnimation = anime({
-        targets: '.back-btn',
-        opacity: [1, 0],
-        translateX: [0, "-1000%"],
-        duration: 250,
+        targets: '.back-btn-content',
+        translateX: [0, -5],
+        duration: 300,
+        easing: 'easeInOutSine'
+    });  
+});
+
+$('.back-btn').mouseleave(() => {
+    const backBtnAnimation = anime({
+        targets: '.back-btn-content',
+        translateX: [-5, 0],
+        duration: 300,
         easing: 'easeInOutSine'
     });  
 });

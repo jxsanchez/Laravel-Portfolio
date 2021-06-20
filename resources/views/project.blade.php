@@ -48,9 +48,10 @@
             <hr class="divider-line">
 
             <a class="back-btn" href="/#projects">
-                <span class="btn-content">
+                <div class="back-btn-content">
                     <i class="back-arrow fa fa-caret-left"></i>Back
-                </span>
+                </div>
+                
             </a>   
         </div>
     </div>
