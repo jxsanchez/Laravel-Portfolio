@@ -40,13 +40,13 @@
                     <div class="footer-column col-lg-3 col-sm-6">
                         <a class="footer-link" href="/">Landing</a>
                     </div>
-                    <div class="footer-column col-lg-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-12">
                         <a class="footer-link" href="{{ $linkAppend }}#about">About</a>
                     </div>
-                    <div class="footer-column col-lg-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-12">
                         <a class="footer-link" href="{{ $linkAppend }}#projects">Projects</a>
                     </div>
-                    <div class="footer-column col-lg-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-12">
                         <a class="footer-link" href="{{ $linkAppend }}#contact">Contact</a>
                     </div>
                 </div>
