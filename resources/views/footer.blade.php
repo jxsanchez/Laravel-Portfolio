@@ -37,16 +37,16 @@
             <div class="navigation-column col-md-4 col-sm-12">
                 <h6 class="footer-column-heading">Navigation</h6>
                 <div class="footer-links-container row">
-                    <div class="footer-column col-md-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-6">
                         <a class="footer-link" href="/">Landing</a>
                     </div>
-                    <div class="footer-column col-md-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-6">
                         <a class="footer-link" href="{{ $linkAppend }}#about">About</a>
                     </div>
-                    <div class="footer-column col-md-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-6">
                         <a class="footer-link" href="{{ $linkAppend }}#projects">Projects</a>
                     </div>
-                    <div class="footer-column col-md-3 col-sm-6">
+                    <div class="footer-column col-lg-3 col-sm-6">
                         <a class="footer-link" href="{{ $linkAppend }}#contact">Contact</a>
                     </div>
                 </div>

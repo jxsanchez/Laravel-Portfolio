@@ -85,32 +85,6 @@ a:hover {
     }
 
     @include media("<=phone") {
-        padding: 40px 20px;
-
-        .section-title {
-            font-size: 1.8rem;
-        }
-
-        .section-subtitle {
-            font-size: 1.5rem;
-        }
-
-        .section-text {
-            font-size: 1rem;
-        }
-
-        .continue-container {
-            .continue-link {
-                font-size: 1.5rem;
-            }
-
-            .continue-caret {
-                font-size: 2rem;
-            }
-        }
-    }
-
-    @include media(">phone", "<=425px") {
         padding: 40px 25px;
 
         .section-title {
@@ -135,6 +109,48 @@ a:hover {
             }
         }
     }
+
+    @include media("<=phoneLandscape", "landscape") {
+        padding: 40px 50px;
+
+        .section-title {
+            font-size: 2.3rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.8rem;
+        }
+
+        .section-text {
+            font-size: 1.3rem;
+        }
+
+        .continue-container {
+            .continue-link {
+                font-size: 1.3rem;
+            }
+
+            .continue-caret {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    @include media(">=phone", "<=tablet", "landscape") {
+        padding: 40px 50px;
+
+        .section-title {
+            font-size: 2.7rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.7rem;
+        }
+
+        .section-text {
+            font-size: 1.2rem;
+        }
+    }
 }
 
 .section-divider {
@@ -146,12 +162,6 @@ a:hover {
     width: 7%;
 
     @include media("<=phone") {
-        border-width: 20px;
-        margin: 40px auto;
-        width: 30%;
-    }
-
-    @include media(">phone", "<=425px") {
         border-width: 20px;
         margin: 25px auto;
         width: 30%;

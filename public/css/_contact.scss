@@ -73,6 +73,18 @@
         }
     }
 
+    @include media("<=phoneLandscape", "landscape") {
+        padding-bottom: 13%;
+
+        .contact-form {
+            width: 50%;
+        }
+
+        .footer-link {
+            text-align: center;
+        }
+    }
+
     @include media(">=tablet", "<desktop") {
         background-position-y: -100%;
         height: fit-content;
@@ -81,5 +93,9 @@
         .contact-form {
             width: 60%;
         }
+    }
+
+    @include media(">=phone", "<=tablet", "landscape") {
+        padding-bottom: 13%;
     }
 }

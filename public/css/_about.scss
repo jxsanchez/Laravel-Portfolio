@@ -6,11 +6,11 @@
     }
 
     @include media("<=phone") {
-        padding-bottom: 55%;
+        padding-bottom: 50%;
     }
 
-    @include media(">phone", "<=425px") {
-        padding-bottom: 50%;
+    @include media("<=phoneLandscape", "landscape") {
+        padding-bottom: 15%;
     }
 
     @include media(">=tablet", "<desktop") {

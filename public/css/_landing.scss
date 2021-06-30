@@ -47,26 +47,6 @@
     }
 
     @include media("<=phone") {
-        background-position: 0px -390px;
-
-        .landing-title {
-            font-size: 2.5rem;
-            letter-spacing: 7px;
-        }
-
-        .landing-subtitle {
-            font-size: 1.5rem;
-        }
-
-        .socials-container {
-            .social-link {
-                font-size: 2rem;
-                margin: 0 15px;
-            }
-        }
-    }
-
-    @include media(">phone", "<=425px") {
         background-position: 0px -450px;
 
         .landing-title {
@@ -86,14 +66,36 @@
         }
     }
 
-    @include media(">phone", "<=425px", "landscape") {
+    @include media("<=phoneLandscape", "landscape") {
+        background-position: 0px -420px;
+        height: 85vh;
+
         .landing-title {
-            font-size: 1rem;
-            letter-spacing: 5px;
+            font-size: 3.2rem;
+        }
+
+        .landing-subtitle {
+            font-size: 1.9rem;
+        }
+
+        .socials-container {
+            .social-link {
+                font-size: 1.9rem;
+                margin: 0 15px;
+            }
         }
     }
 
     @include media(">=tablet", "<desktop") {
         background-position: 0px -515px;
+    }
+
+    @include media(">=phone", "<=tablet") {
+        background-size: contain;
+        background-position-y: -30%;
+    }
+
+    @include media(">=phone", "<=tablet", "landscape") {
+        background-position: 0px -400px;
     }
 }
