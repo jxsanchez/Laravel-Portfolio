@@ -83,6 +83,7 @@
 
             .footer-social-links-container {
                 @include flexCenter(row);
+                margin-bottom: 20px;
 
                 .footer-social-link {
                     font-size: 1.7rem;
@@ -92,6 +93,10 @@
 
             .footer-column {
                 margin-bottom: 10px;
+            }
+
+            .navigation-column {
+                width: 50%;
             }
 
             .footer-links-container {
