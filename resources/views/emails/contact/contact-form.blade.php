@@ -1,9 +1,8 @@
 @component('mail::message')
 
-# Thank you for your message!
+# New Contact Form Submitted by {{ $data["name"] }}
 
-{{ $data["name"] }}
-{{ $data["email"] }}
+{{ $data["name"] }} ({{ $data["email"] }})
 
 {{ $data["message"] }}
 

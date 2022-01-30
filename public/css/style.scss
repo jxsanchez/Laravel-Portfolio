@@ -56,6 +56,11 @@ a:hover {
         font-size: $regFontSize;
     }
 
+    .emphasized {
+        font-weight: bold;
+        color: $primaryLightBlue;
+    }
+
     .continue-container {
         animation: float 1s infinite alternate ease-in-out;
         bottom: 5%;
@@ -88,7 +93,7 @@ a:hover {
         padding: 40px 25px;
 
         .section-title {
-            font-size: 2rem;
+            font-size: 2.3rem;
         }
 
         .section-subtitle {
@@ -96,7 +101,7 @@ a:hover {
         }
 
         .section-text {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         .continue-container {

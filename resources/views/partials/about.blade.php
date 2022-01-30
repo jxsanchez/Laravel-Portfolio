@@ -8,7 +8,7 @@
     </h2>
     
     <p class="section-text">
-        I discovered my passion for web development during a univeristy project class in 2019 and I have been improving my skills ever since. I have experience with:
+        I discovered my <span class="emphasized">passion for web development</span> after following a YouTube tutorial for building a simple login interface. From there, I decided to pursue web develpment as a career with <span class="emphasized">YouTube and Udemy</span> as my teachers. I am currently a <span class="emphasized">Junior Software Developer</span> at Customer ID, and I have experience with:
     </p>
 
     <!-- Show Skill columns using Bootstrap -->

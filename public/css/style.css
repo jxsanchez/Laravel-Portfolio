@@ -57,6 +57,11 @@ a:hover {
   font-size: 1.3rem;
 }
 
+.section .emphasized {
+  font-weight: bold;
+  color: #57b4f3;
+}
+
 .section .continue-container {
   -webkit-animation: float 1s infinite alternate ease-in-out;
           animation: float 1s infinite alternate ease-in-out;
@@ -112,13 +117,13 @@ a:hover {
     padding: 40px 25px;
   }
   .section .section-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
   .section .section-subtitle {
     font-size: 1.7rem;
   }
   .section .section-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .section .continue-container .continue-link {
     font-size: 1.7rem;
